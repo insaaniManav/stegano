@@ -25,7 +25,7 @@ SET(CMAKE_BUILD_TYPE Debug)
 #endif()
 
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Core Quick Widgets REQUIRED)
-find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Quick Widgets REQUIRED)
+find_package(Qt${QT_VLinuxERSION_MAJOR} COMPONENTS Core Quick Widgets REQUIRED)
 
 if(ANDROID)
     add_library(Steganography SHARED
